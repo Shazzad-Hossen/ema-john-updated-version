@@ -1,10 +1,15 @@
-# This is an empty skeletone of a react app
+# Ema-John new Version
+## Live deploy 
+### https://ema-john-new-version.netlify.app/cart
+
 
 ## Pre installed Packages
  - tailwind css
  - react router dom
  - react redux
  - react toolkit
+ - react toastify
+ - font awesome
 
  ## to install all dependencies
   ### `npm i`
