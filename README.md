@@ -1,6 +1,6 @@
 # Ema-John new Version
 ## Live deploy 
-### https://ema-john-new-version.netlify.app/cart
+### https://ema-john-new-version.netlify.app
 
 
 ## Pre installed Packages
