@@ -1,4 +1,4 @@
-
+import {  toast } from 'react-toastify';
 export const addToCart=(data)=> {
     const product={
         qt:1,
@@ -21,6 +21,8 @@ export const addToCart=(data)=> {
     else {   
         localStorage.setItem("cart",JSON.stringify([product]))
     }
+    toast.success("Item is added to cart");
+
 
 
 }

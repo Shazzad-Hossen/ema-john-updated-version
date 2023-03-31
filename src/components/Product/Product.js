@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { addToCart } from '../../utilities/localStorage/manageLocalStorage';
 import './Product.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Product = () => {
@@ -23,9 +25,10 @@ const Product = () => {
     
     return (
         <main> <br /> <br /> <br />
+         <ToastContainer theme="colored" />
 
             <div className="px-10">
-            <div className=" flex gap-5">
+            <div className="flex  flex-col md:flex-row gap-5">
                 <img className='pImg' src={images[imIndex]} alt="" />
                 <div className=""> <br /> <br />
                 <h1 className='text-3xl font-bold'>{title.toUpperCase()}</h1> <br />
@@ -42,7 +45,7 @@ const Product = () => {
 
             </div>
             <br /> <br />
-            <div className=" flex gap-4">
+            <div className=" flex gap-4 flex-wrap">
             {
                 images.map((imgUrl,i)=> <img key={i} onClick={()=>setImg(i)} className='h-[70px] w-[70px] border-2 p-1' src={imgUrl} alt="" />)
             }

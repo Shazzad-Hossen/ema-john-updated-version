@@ -14,8 +14,8 @@ const Cartitem = ({data,setCartItem}) => {
             <h1 className='font-bold text-lg'>{title}</h1>
             </div>
             <div className=" flex gap-1">
-            <p className='w-[100px] font-bold'>{qt}</p>
-            <p className='w-[100px] font bold'>${price}</p>
+            <p className='w-[50px] font-bold'>{qt}</p>
+            <p className='w-[50px] font bold'>${price}</p>
             <FontAwesomeIcon onClick={()=>removeProduct(id,setCartItem)} className='text-[red] h-[20px] w-[20px]' icon={faTrash} />
             
             </div>
